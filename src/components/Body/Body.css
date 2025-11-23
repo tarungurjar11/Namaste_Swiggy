@@ -1,0 +1,25 @@
+.restro-card {
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #f9f5f5;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid darkgray;
+}
+.restro-card:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.restro-image {
+    width: 200px;
+    height: 175px;
+}
+
+.restaurant-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+}
+.links {
+    display: grid;
+    font-size: 20px;
+    list-style-type: none;
+    gap: 15px;
+}
