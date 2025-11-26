@@ -1,11 +1,12 @@
 import "./Header.css";
-
-const imgUrl = "https://m.media-amazon.com/images/I/41UaA6ncmbL.png";
+import { LOGO_URL } from "../utils/constants";
+import { useState } from "react";
 const Header = () => {
+  const [buttonText, setButtonText] = useState("Login");
   return (
     <header className="header">
       <div className="logo">
-        <img className="logo" src={imgUrl} alt="Namaste Swiggy Logo" />
+        <img className="logo" src={LOGO_URL} alt="Namaste Swiggy Logo" />
       </div>
       <nav className="nav-items">
         <ul className="nav-list">
@@ -13,6 +14,14 @@ const Header = () => {
           <li>About</li>
           <li>Contact</li>
           <li>Cart</li>
+          <button
+            className="login-btn"
+            onClick={() =>
+              setButtonText(buttonText === "Login" ? "Logout" : "Login")
+            }
+          >
+            {buttonText}
+          </button>
         </ul>
       </nav>
     </header>
