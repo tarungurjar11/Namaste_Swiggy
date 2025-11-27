@@ -1,5 +1,5 @@
 import "./Body.css";
-import { IMG_CDN_URL } from "../utils/constants";
+import { IMG_CDN_URL } from "../../utils/constants";
 const RestroCard = (props) => {
     const { restroData } = props;
 
@@ -10,6 +10,7 @@ const RestroCard = (props) => {
             <p>{restroData.info.costForTwo}</p>
             <p>Rating: {restroData.info.avgRating}</p>
             <p>Cuisine: {restroData.info.cuisines.join(", ")}</p>
+            <p>Delivery Time: {restroData.info.sla.deliveryTime} mins</p>
         </div>
     );
 };

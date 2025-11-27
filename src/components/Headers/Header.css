@@ -23,6 +23,7 @@
     background-color: #4CAF50;
     color: white;
     border: none;
+    width: 80px;
     border-radius: 4px;
     cursor: pointer;
 }
